@@ -1,7 +1,1 @@
-// Commento singola riga
-
-/*
-
-    Commento multipla riga
-
-*/
+const myEmail = prompt('Bentornato, se sei veramente te, inserisci una delle tue 4 Email ;D')
