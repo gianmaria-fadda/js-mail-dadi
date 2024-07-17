@@ -1,21 +1,14 @@
-const firstNumber = parseInt(prompt('Player 1, seleziona il tuo numero da 1 a 6 #GoodLuck;D'));
-const secondNumber = parseInt(prompt('Player 2, seleziona il tuo numero da 1 a 6 #GoodLuck;D'));
+const firstNumber = Math.floor(Math.random() * 6) + 1;
+console.log('firstNumber', firstNumber, typeof firstNumber)
+const secondNumber = Math.floor(Math.random() * 6) + 1;
+console.log('secondNumber', secondNumber, typeof secondNumber)
 
-if (isNaN(secondNumber) || secondNumber < 1 || secondNumber > 6) {
-    console.log('Ma cosa avete scritto :(, rifatelo bene!!!')
-}
-else if (isNaN(firstNumber) || firstNumber < 1 || firstNumber > 6) {
-    console.log('Ma cosa avete scritto :(, rifatelo bene!!!')
-}
-else if (firstNumber > secondNumber) {
-    console.log('Complimenti Player 1 HAI VINTO!!!')
+if (firstNumber > secondNumber) {
+    console.log('Hai VINTOOO!!!')
 }
 else if (firstNumber < secondNumber) {
-    console.log('Complimenti Player 2 HAI VINTO!!!')
-}
-else if (firstNumber == secondNumber) {
-    console.log('Cavolo che sfida, però è pareggio, ritentate XD')
+    console.log('Hai PERSOOO!!!')
 }
 else {
-    console.log('Ma cosa avete scritto :(, rifatelo bene!!!')
+    console.log('Pareggio!!!')
 }
